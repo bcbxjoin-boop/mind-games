@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкеты | Mind Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<header>
+  <div class="brand"><a href="index.html" title="На главную"><img src="images/logo.svg" width="38" height="38" alt="Логотип Mind Games"></a><h1>Mind Games</h1></div>
+  <small>Психологические триллеры: игры разума</small>
+</header>
+<nav aria-label="Меню сайта">
+<a href="index.html">Главная</a>
+<a href="genre.html">О жанре</a>
+<a href="films.html">Фильмы</a>
+<a href="gallery.html">Галерея</a>
+<a href="forms.html" class="active">Анкеты</a>
+<a href="passport.html">Паспорт</a>
+<a href="dom.html">DOM</a>
+<a href="task.html">Задача</a>
+<a href="genre.html#features">Особенности жанра</a>
+<a href="https://www.bfi.org.uk/lists/100-essential-thrillers" target="_blank" rel="noopener noreferrer">BFI - 100 триллеров</a>
+</nav>
+<main>
+
+<h1>Анкета киноклуба</h1>
+<p>На этой странице две учебные формы. После отправки откроется сайт httpbin.org, который показывает полученные значения в поле <code>form</code>. Не вводите настоящие пароли или другие конфиденциальные данные.</p>
+<h2>Форма 1. Контактные данные</h2>
+<form action="https://httpbin.org/post" method="post" target="_blank">
+  <p>Фамилия: <input type="text" name="lastname" placeholder="Иванова" required></p>
+  <p>Имя: <input type="text" name="firstname" placeholder="Анна" required></p>
+  <p>Учебная группа: <input type="text" name="student_group" value="Группа 4" required></p>
+  <p>Мобильный телефон: <input type="tel" name="mobile_phone" placeholder="+79990000000" required></p>
+  <p>Электронная почта: <input type="email" name="email" placeholder="example@mail.ru" required></p>
+  <p>Дата отправки: <input type="date" name="message_date" value="2026-10-21" required></p>
+  <p><input class="btn" type="submit" value="Отправить данные"> <input type="reset" value="Очистить"></p>
+</form>
+<h2>Форма 2. Выбор фильма для киновечера</h2>
+<form action="https://httpbin.org/post" method="post" target="_blank">
+  <input type="hidden" name="form_type" value="movie_night_vote">
+  <p>Любимый триллер: <input type="text" name="favorite_film" value="Престиж" required></p>
+  <p>Количество просмотренных триллеров: <input type="number" name="films_count" min="0" max="1000" value="5" required></p>
+  <p>Предпочитаю:</p>
+  <p><label><input type="radio" name="thriller_type" value="detective" checked> Детективные сюжеты</label><br>
+     <label><input type="radio" name="thriller_type" value="psychological"> Психологические загадки</label></p>
+  <p><label><input type="checkbox" name="discussion" value="yes" checked> Хочу обсуждать фильм после просмотра</label></p>
+  <p><label><input type="checkbox" name="recommendations" value="yes"> Хочу получать рекомендации</label></p>
+  <p>Желаемая дата просмотра: <input type="date" name="screening_date" value="2026-10-25" required></p>
+  <p>Учебный пароль (не настоящий!): <input type="password" name="demo_password" value="demo123" required></p>
+  <p><input class="btn" type="submit" value="Отправить выбор"> <input type="reset" value="Сбросить"></p>
+</form>
+<p class="note">Сервис httpbin используется только для демонстрации отправки данных; он не создаёт постоянную базу участников.</p>
+
+<p><a href="#top">Вернуться наверх</a> | <a href="index.html">На главную</a></p>
+</main>
+<footer>Учебный сайт по HTML и JavaScript. 2026 год.</footer>
+</body>
+</html>

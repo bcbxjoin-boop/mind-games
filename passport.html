@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Паспорт и транслитерация | Mind Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<header>
+  <div class="brand"><a href="index.html" title="На главную"><img src="images/logo.svg" width="38" height="38" alt="Логотип Mind Games"></a><h1>Mind Games</h1></div>
+  <small>Психологические триллеры: игры разума</small>
+</header>
+<nav aria-label="Меню сайта">
+<a href="index.html">Главная</a>
+<a href="genre.html">О жанре</a>
+<a href="films.html">Фильмы</a>
+<a href="gallery.html">Галерея</a>
+<a href="forms.html">Анкеты</a>
+<a href="passport.html" class="active">Паспорт</a>
+<a href="dom.html">DOM</a>
+<a href="task.html">Задача</a>
+<a href="genre.html#features">Особенности жанра</a>
+<a href="https://www.bfi.org.uk/lists/100-essential-thrillers" target="_blank" rel="noopener noreferrer">BFI - 100 триллеров</a>
+</nav>
+<main>
+
+<h1>Изменяем кириллицу на латиницу по клику</h1>
+<p>Нажмите кнопку, чтобы заменить русские фамилию и имя на латинские символы. Повторное нажатие возвращает прежние значения.</p>
+<div class="passport">
+  <div class="page"><h3>РОССИЙСКАЯ ФЕДЕРАЦИЯ</h3>
+    <p><small>Паспорт выдан</small></p><p>Отделом МВД России по г. Санкт-Петербургу</p>
+    <p><small>Дата выдачи:</small> 01.10.2021</p><p><small>Код подразделения:</small> 000-000</p>
+    <p class="note">Учебный макет, реквизиты вымышлены.</p>
+  </div>
+  <div class="page"><h3>СВЕДЕНИЯ О ВЛАДЕЛЬЦЕ</h3>
+    <div class="p-info"><img src="images/portrait.svg" alt="Условная фотография"><div>
+      <p>Фамилия: <b id="lastname">Кузнецова</b></p>
+      <p>Имя: <b id="firstname">Екатерина</b></p>
+      <p><span id="year-label">Год рождения</span>: <b id="birthyear">2007</b></p>
+      <p><span id="city-label">Место рождения</span>: <span id="city">Санкт-Петербург</span></p>
+    </div></div><p class="note">Внешний вид упрощён для учебной работы.</p>
+  </div>
+</div>
+<button id="change" class="btn" type="button">Изменить язык</button>
+<script src="scripts/passport.js"></script>
+
+<p><a href="#top">Вернуться наверх</a> | <a href="index.html">На главную</a></p>
+</main>
+<footer>Учебный сайт по HTML и JavaScript. 2026 год.</footer>
+</body>
+</html>
