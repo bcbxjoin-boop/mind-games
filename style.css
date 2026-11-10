@@ -134,6 +134,11 @@ table.films {
     background-position: center;
 }
 
+/* Белый фон ячеек делает текст таблицы читаемым. */
+table.films td {
+    background-color: white;
+}
+
 /* Формы и кнопки */
 form {
     background-color: white;
