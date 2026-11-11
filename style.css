@@ -128,13 +128,17 @@ th {
     text-align: left;
 }
 
+/* Небольшая киноплёнка на фоне видна в промежутках между ячейками. */
 table.films {
-    background-image: url("https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Movie-918655_1920.jpg/960px-Movie-918655_1920.jpg");
-    background-size: cover;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/36/Film-Strip.svg");
+    background-size: 120px;
+    background-repeat: repeat;
     background-position: center;
+    border-collapse: separate;
+    border-spacing: 5px;
 }
 
-/* Белый фон ячеек делает текст таблицы читаемым. */
+/* Белый фон ячеек сохраняет читаемость текста. */
 table.films td {
     background-color: white;
 }
