@@ -30,13 +30,15 @@
 <ul><li>Если A меньше 62, то X = A<sup>2</sup> + 4 + 5.</li>
 <li>Иначе X = 1 / A<sup>2</sup> + 4 * A + 5.</li></ul>
 <p>Введите любое вещественное число, например 10, 62 или 62.5.</p>
-<form>
+<form action="https://httpbin.org/post" method="post" target="_blank" onsubmit="calculate()">
+  <input type="hidden" name="task_text" value="Задача 1015. Дано вещественное A. При A меньше 62 X=A^2+4+5, иначе X=1/A^2+4*A+5.">
   <p><label for="a">Число A: </label><input id="a" name="a" type="number" step="any" value="10" required></p>
   <p><button id="calculate" class="btn" type="button">Вычислить X</button></p>
   <p><label for="result">Результат X: </label><input id="result" name="result" type="text" size="29" value="не вычислено" readonly></p>
   <p id="formula" class="note">После нажатия будет показана выбранная формула.</p>
+  <p><input type="submit" class="btn" value="Отправить условие, A и результат"></p>
 </form>
-<p>При A = 10 должно получиться X = 109. При A = 62 используется вторая формула.</p>
+<p>При A = 10 должно получиться X = 109. При A = 62 используется вторая формула. Чтобы отправить данные на сервер, нажмите «Отправить условие, A и результат».</p>
 <script src="scripts/task.js"></script>
 
 <p><a href="#top">Вернуться наверх</a> | <a href="index.html">На главную</a></p>
